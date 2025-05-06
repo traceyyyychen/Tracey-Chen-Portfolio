@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracey Chen Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 4px;
+    }
+    nav a.active,
+    nav a:hover {
+      color: #000;
+    }
+    nav a.active::after,
+    nav a:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .intro img {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .intro h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .intro p {
+      color: #444;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .project {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 4rem 0;
+      flex-wrap: wrap;
+    }
+    .project img {
+      width: 100%;
+      max-width: 460px;
+      border-radius: 12px;
+      box-shadow: 0 20px 20px rgba(0,0,0,0.08);
+    }
+    .project-text {
+      flex: 1;
+    }
+    .project-text h2 {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 0.75rem;
+    }
+    .explore {
+      display: inline-block;
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #0077cc;
+      text-decoration: none;
+    }
+    .explore:hover {
+      text-decoration: underline;
+    }
+    .footer {
+  border-top: 1px solid #ddd;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 0.95rem;
+  gap: 2rem;
+}
+.footer a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #004a99;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Tracey Chen</strong></div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects-1.html">Academic</a>
+      <a href="projects-2.html">Photography</a>
+      <a href="projects-3.html">Illustration</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <img src="images/IMG_3235.jpg" alt="Tracey Chen portrait">
+      <h1>Hello, I’m Tracey Chen</h1>
+      <p>I didn’t start out thinking I’d be a designer—I just loved capturing small moments through a lens. That instinct to observe and create led me to the GBDA program at the University of Waterloo, where I explore the intersection of design, business, and technology. Whether I’m wireframing an app or shooting photos on the weekend, I bring the same curiosity and visual thinking to everything I do.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h2>01 / Academic Projects<br>Figma Designs</h2>
+        <a href="projects-1.html" class="explore">Explore More →</a>
+      </div>
+      <img src="images/PJ1.jpg" alt="Academic Projects Preview">
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h2>02 / Photography</h2>
+        <a href="projects-2.html" class="explore">Explore More →</a>
+      </div>
+      <img src="images/IMG_0231.JPG" alt="Photography Preview">
+    </div>
+
+    <div class="project">
+      <div class="project-text">
+        <h2>03 / Digital Illustration</h2>
+        <a href="projects-3.html" class="explore">Explore More →</a>
+      </div>
+      <img src="images/10.jpg" alt="Digital Illustration Preview">
+    </div>
+  </main>
+
+  <div class="footer">
+    <div>Let’s work together →</div>
+    <div>
+      <a href="mailto:t44chen@uwaterloo.ca">t44chen@uwaterloo.ca</a><br>
+      <a href="https://www.linkedin.com/in/tracey-chen-313245290" target="_blank" rel="noopener">Visit my LinkedIn ↗</a>
+    </div>
+  </div>
+</body>
+</html>

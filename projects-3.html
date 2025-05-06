@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Illustration - Tracey Chen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 4px;
+    }
+    nav a.active,
+    nav a:hover {
+      color: #000;
+    }
+    nav a.active::after,
+    nav a:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 1.5rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .intro {
+      max-width: 750px;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+      color: #555;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .grid img:hover {
+      transform: scale(1.02);
+    }
+    .footer {
+  border-top: 1px solid #ddd;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 0.95rem;
+  gap: 2rem;
+}
+.footer a {
+  text-decoration: none;
+  color: #0077cc;
+  transition: color 0.3s;
+}
+.footer a:hover {
+  color: #004a99;
+}
+.subtitle, .intro {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Tracey Chen</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects-1.html">Academic</a>
+      <a href="projects-2.html">Photography</a>
+      <a href="projects-3.html" class="active">Illustration</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="subtitle">
+      <h1>03 / DIGITAL ILLUSTRATION</h1>
+    </div>
+
+    <div class="intro">
+      <p>In my spare time, I immerse myself in digital illustration, aiming to create unique visual experiences that not only enrich my design inspiration, but also significantly improve my drawing skills. These creative endeavors help develop new design ideas and constantly push the boundaries of what I can achieve artistically.</p>
+    </div>
+
+    <div class="grid">
+      <img src="images/10.jpg" alt="pink landscape">
+      <img src="images/111.jpg" alt="logo">
+      <img src="images/9.jpg" alt="aurora">
+      <img src="images/7.jpg" alt="red desert">
+      <img src="images/4.jpg" alt="sunset reflection">
+      <img src="images/2.jpg" alt="space explosion">
+      <img src="images/3.jpg" alt="bue texture">
+      <img src="images/comic-1.jpg" alt="comic 1">
+      <img src="images/comic-2.jpg" alt="comic 2">
+      <img src="images/comic-3.jpg" alt="comic 3">
+      <img src="images/comic-4.jpg" alt="comic 4">
+      <img src="images/comic-5.jpg" alt="comic 5">
+    </div>
+  </main>
+
+  <div class="footer">
+    <div>Let’s work together →</div>
+    <div>
+      <a href="mailto:t44chen@uwaterloo.ca">t44chen@uwaterloo.ca</a><br>
+      <a href="https://www.linkedin.com/in/tracey-chen-313245290" target="_blank" rel="noopener">Visit my LinkedIn ↗</a>
+    </div>
+  </div>
+</body>
+</html>
